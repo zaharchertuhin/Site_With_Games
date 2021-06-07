@@ -15,9 +15,9 @@ def Game_list(request):
     games = Game.objects.all()
     return render(request, "games/home.html", {"game_list":games})
 
-def Game_Detail(request, slug):
-    game = Game.objects.get(slug=slug)
-    return render(request, "games/game_detail.html", {"game":game})
+# def Game_Detail(request, slug):
+#     game = Game.objects.get(slug=slug)
+#     return render(request, "games/game_detail.html", {"game":game})
 
 def home(request):
     # model = Game()
