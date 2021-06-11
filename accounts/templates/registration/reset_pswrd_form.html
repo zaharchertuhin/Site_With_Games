@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Восстановление пароля{% endblock title %}
+{% block content %}
+<h1>Востановление пароля</h1>
+    <div>
+         <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+              <p><input type="submit" value="Востановить пароль"></p>
+        </form>
+    </div>
+{% endblock content %}

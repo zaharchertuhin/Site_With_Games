@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Gameshop{% endblock title %}
+{% block content %}
+    <h1 class="game-detail-title1">{{ game.title }}</h1>
+    {%  if game.image %}
+      <img src="{{ game.image.url }}">
+    {%  endif %}
+    <h2 class="game-detail-title2">Информация об игре</h2>
+    <h2 class="game-detail-title2">Описание игры</h2>
+    <h2 class="game-detail-title2">Комментарии к игры</h2>
+{% endblock content %}
