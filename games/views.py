@@ -4,7 +4,7 @@ from django.views.generic import ListView, DetailView
 
 class GamelistView(ListView):
     model = Game
-    template_name = "games/game_list.html"
+    template_name = "games/home.html"
     context_object_name = "game_list"
 
 class GameDetailView(DetailView):
